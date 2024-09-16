@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Social } from "@/consts";
+import { FileDown } from "lucide-react";
+import Link from "next/link";
 
 export const Socials = () => {
 	return (
@@ -17,20 +19,27 @@ export const Socials = () => {
 				</span>{" "}
 				or connect with me on:
 			</h2>
-			<span className="w-full flex gap-2">
-				{Social.map((sc) => (
-					<a
-						key={sc.name}
-						href={sc.href}
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						<Button variant="outline" size="icon">
-							{sc.icon}
-						</Button>
-					</a>
-				))}
-			</span>
+			<div className="flex justify-between items-center w-full">
+				<span className="w-full flex gap-5">
+					{Social.map((sc) => (
+						<a
+							key={sc.name}
+							href={sc.href}
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<Button variant="outline" size="icon">
+								{sc.icon}
+							</Button>
+						</a>
+					))}
+				</span>
+				<Link href="/resume.pdf" target="_blank">
+					<Button className="text-base ml-10 rounded-sm lg:ml-0">
+						<FileDown className="mr-2 h-4 w-4" /> Resume
+					</Button>
+				</Link>
+			</div>
 		</div>
 	);
 };

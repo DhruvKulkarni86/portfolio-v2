@@ -29,6 +29,13 @@ const config: Config = {
 			bold: "700",
 		},
 		extend: {
+			backgroundImage: {
+				"light-radial": "radial-gradient(#d0d2d6 1px, transparent 1px)",
+				"dark-radial": "radial-gradient(#ffffff33 1px, #00091d 1px)",
+			},
+			backgroundSize: {
+				"custom-size": "20px 20px",
+			},
 			colors: {
 				texture: "hsl(var(--texture))",
 				background: "hsl(var(--background))",
