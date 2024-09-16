@@ -13,6 +13,7 @@ const config: Config = {
 			base: "1rem",
 			sxl: "1.2rem",
 			xl: "1.333rem",
+			iconb: "1.555rem",
 			"2xl": "1.777rem",
 			"3xl": "2.369rem",
 			"4xl": "3.158rem",
@@ -86,6 +87,9 @@ const config: Config = {
 			},
 		},
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [
+		require("tailwindcss-animate"),
+		require("@tailwindcss/typography"),
+	],
 };
 export default config;
