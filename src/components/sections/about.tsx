@@ -4,7 +4,10 @@ import { Badge } from "../ui/badge";
 
 export const About = () => {
 	return (
-		<div id="about" className="flex flex-col gap-10 py-2">
+		<section
+			id="about"
+			className="flex scroll-mt-16 lg:scroll-mt-24 flex-col gap-10 py-2"
+		>
 			<div className="">
 				<h2 className="text-2xl mb-2 w-fit  bg-background tracking-tight font-medium">
 					About
@@ -88,6 +91,6 @@ export const About = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };

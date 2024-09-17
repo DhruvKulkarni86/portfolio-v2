@@ -4,7 +4,10 @@ import { Badge } from "../ui/badge";
 
 export const Experience = () => {
 	return (
-		<div id="about" className="flex flex-col gap-5 py-2">
+		<section
+			id="experience"
+			className="flex flex-col scroll-mt-16 l:scroll-mt-24 h-screen gap-5 py-2"
+		>
 			<div className="">
 				<h1 className="text-2xl mb-0 w-fit  bg-background tracking-tight font-medium">
 					Experience
@@ -50,6 +53,6 @@ export const Experience = () => {
 					</div>
 				))}
 			</div>
-		</div>
+		</section>
 	);
 };

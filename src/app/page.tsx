@@ -1,17 +1,17 @@
 import { Background } from "@/components/home/background";
 import { Header } from "@/components/home/header/header";
 import { Main } from "@/components/home/main/Main";
-import { Nav } from "@/components/home/nav/nav";
+import { MobileNav } from "@/components/home/nav/mobile-nav";
 
 export default function Home() {
 	return (
-		<div>
+		<div className="cursor-default ">
 			<Background />
 			<div className="relative mx-auto min-h-screen  max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
 				<div className="lg:flex lg:justify-between lg:gap-4 ">
 					<Header />
-					<div className="lg:hidden flex my-5 sticky top-0">
-						<Nav />
+					<div className="fixed m-4 lg:hidden bottom-0 right-0">
+						<MobileNav />
 					</div>
 					<Main />
 				</div>
