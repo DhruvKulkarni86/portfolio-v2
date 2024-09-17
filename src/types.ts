@@ -6,6 +6,7 @@ export type socials = {
 
 export type about = {
 	about: string;
+	current?: string;
 	tooling: {
 		languages: {
 			name: string;
@@ -22,3 +23,12 @@ export type about = {
 		}[];
 	};
 };
+
+export type exp = {
+	role: string;
+	company: string;
+	duration: string;
+	href: string;
+	tech: string[];
+	description: string[];
+}[];
