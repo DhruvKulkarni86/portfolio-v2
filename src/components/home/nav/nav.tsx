@@ -19,3 +19,4 @@ export const Nav = () => {
 };
 
 // ml-[calc(50%-50vw)] mr-[calc(50%-50vw)]
+// [&>p]:bg-background

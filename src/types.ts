@@ -9,15 +9,12 @@ export type about = {
 	tooling: {
 		languages: {
 			name: string;
-			icon: React.ReactNode;
 		}[];
-		library: {
+		frontend: {
 			name: string;
-			icon: React.ReactNode;
 		}[];
-		tools: {
+		backend: {
 			name: string;
-			icon: React.ReactNode;
 		}[];
 		rpa: {
 			name: string;

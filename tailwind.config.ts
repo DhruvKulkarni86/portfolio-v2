@@ -31,7 +31,7 @@ const config: Config = {
 		},
 		extend: {
 			backgroundImage: {
-				"light-radial": "radial-gradient(#d0d2d6 1px, transparent 1px)",
+				"light-radial": "radial-gradient(#aba9a9 1px, transparent 1px)",
 				"dark-radial": "radial-gradient(#ffffff33 1px, #00091d 1px)",
 			},
 			backgroundSize: {
