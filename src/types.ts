@@ -1,3 +1,13 @@
+export type nav = {
+	name: string;
+	href: string;
+}[];
+
+export type sections = {
+	name: string;
+	section: React.ReactNode;
+}[];
+
 export type socials = {
 	name: string;
 	href: string;
@@ -31,4 +41,13 @@ export type exp = {
 	href: string;
 	tech: string[];
 	description: string[];
+}[];
+
+export type projects = {
+	title: string;
+	github: string;
+	hosted?: string;
+	description: string;
+	tech: string[];
+	images: string[];
 }[];

@@ -9,7 +9,8 @@ import {
 	DrawerFooter,
 	DrawerTrigger,
 } from "@/components/ui/drawer";
-import { ChevronsUp, ChevronUp, X } from "lucide-react";
+import { NavLinks } from "@/content/config/consts";
+import { ChevronsUp, Settings2, X } from "lucide-react";
 import Link from "next/link";
 
 export const MobileNav = () => {
@@ -17,29 +18,20 @@ export const MobileNav = () => {
 		<Drawer>
 			<DrawerTrigger className="lg:hidden" asChild>
 				<Button size="icon">
-					<ChevronUp className="h-4 w-4" />
+					<Settings2 className="h-4 w-4" />
 				</Button>
 			</DrawerTrigger>
 			<DrawerContent className="lg:hidden">
 				<div className="mx-auto w-full max-w-screen-xl">
 					<div className="">
 						<nav className="text-xl bg-background  font-semibold italic flex flex-col gap-2 w-full justify-center items-center my-5">
-							<Link href="/#about">
-								<DrawerClose asChild>
-									<p>About</p>
-								</DrawerClose>
-							</Link>
-
-							<Link href="/#experience">
-								<DrawerClose asChild>
-									<p>Experience</p>
-								</DrawerClose>
-							</Link>
-							<Link href="/#projects">
-								<DrawerClose asChild>
-									<p>Projects</p>
-								</DrawerClose>
-							</Link>
+							{NavLinks.map((nav) => (
+								<Link key={nav.name} href={nav.href}>
+									<DrawerClose asChild>
+										<p>{nav.name}</p>
+									</DrawerClose>
+								</Link>
+							))}
 						</nav>
 					</div>
 					<DrawerFooter>

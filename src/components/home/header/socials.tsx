@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Social } from "@/consts";
+import { Social } from "@/content/config/consts";
 import { FileDown } from "lucide-react";
 import Link from "next/link";
 
@@ -19,7 +19,7 @@ export const Socials = () => {
 				</span>{" "}
 				or connect with me on:
 			</h2>
-			<div className="flex justify-between items-center w-full">
+			<div className="flex justify-between items-center w-full max-lg:max-w-[60%]">
 				<span className="w-full flex gap-5">
 					{Social.map((sc) => (
 						<a

@@ -1,6 +1,7 @@
 import { ModeToggle } from "@/components/theme-toggle";
 import { Socials } from "./socials";
 import { Nav } from "../nav/nav";
+import Link from "next/link";
 
 export const Header = () => {
 	return (
@@ -10,9 +11,11 @@ export const Header = () => {
 		>
 			<div className="flex flex-col gap-5">
 				<div className="flex flex-col items-start w-full">
-					<h1 className="text-3xl bg-background  lg:text-4xl font-bold tracking-tight">
-						Dhruv Kulkarni
-					</h1>
+					<Link href="">
+						<h1 className="text-3xl bg-background  lg:text-4xl font-bold tracking-tight">
+							Dhruv Kulkarni
+						</h1>
+					</Link>
 					<h2 className="text-xl bg-background  font-semibold tracking-tight">
 						Frontend Developer | RPA Developer
 					</h2>

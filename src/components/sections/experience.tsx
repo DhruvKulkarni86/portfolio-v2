@@ -4,11 +4,11 @@ import { Badge } from "../ui/badge";
 
 export const Experience = () => {
 	return (
-		<section
+		<div
 			id="experience"
-			className="flex flex-col scroll-mt-16 l:scroll-mt-24 h-screen gap-5 py-2"
+			className="flex flex-col scroll-mt-16 l:scroll-mt-24 gap-5 lg:pt-10 pt-2"
 		>
-			<div className="">
+			<div className="max-w-lg">
 				<h1 className="text-2xl mb-0 w-fit  bg-background tracking-tight font-medium">
 					Experience
 				</h1>
@@ -17,7 +17,7 @@ export const Experience = () => {
 						key={exp.company}
 						className="flex group flex-col gap-1 py-5"
 					>
-						<h2 className="font-medium text-xl tracking-tight lg:text-xl">
+						<h2 className="font-semibold text-xl tracking-tight lg:text-xl">
 							{exp.role}
 						</h2>
 						<span className="flex w-full group-hover:text-primary justify-between lg:justify-normal lg:gap-5 items-center">
@@ -43,7 +43,7 @@ export const Experience = () => {
 							{exp.tech.map((tc) => (
 								<Badge
 									variant="secondary"
-									className="text-primary"
+									className="text-primary text-badge"
 									key={tc}
 								>
 									{tc}
@@ -53,6 +53,6 @@ export const Experience = () => {
 					</div>
 				))}
 			</div>
-		</section>
+		</div>
 	);
 };

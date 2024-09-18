@@ -1,11 +1,11 @@
-import { About } from "@/components/sections/about";
-import { Experience } from "@/components/sections/experience";
+import { Sections } from "@/content/config/consts";
 
 export const Main = () => {
 	return (
-		<main className="lg:w-1/2 py-24 flex flex-col gap-20">
-			<About />
-			<Experience />
+		<main className="lg:w-1/2 py-24 max-lg:py-20 flex flex-col gap-20">
+			{Sections.map((section) => (
+				<section key={section.name}>{section.section}</section>
+			))}
 		</main>
 	);
 };
