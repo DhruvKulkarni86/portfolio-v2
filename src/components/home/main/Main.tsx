@@ -1,4 +1,5 @@
 import { Sections } from "@/content/config/consts";
+import { Footer } from "../footer/footer";
 
 export const Main = () => {
 	return (
@@ -6,6 +7,7 @@ export const Main = () => {
 			{Sections.map((section) => (
 				<section key={section.name}>{section.section}</section>
 			))}
+			<Footer />
 		</main>
 	);
 };

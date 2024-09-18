@@ -9,7 +9,7 @@ export const Projects = () => {
 	return (
 		<div
 			id="projects"
-			className="flex flex-col scroll-mt-16 l:scroll-mt-24 h-screen lg:pt-10 pt-2 "
+			className="flex flex-col scroll-mt-16 l:scroll-mt-24  lg:pt-10 pt-2 "
 		>
 			<div className="max-w-xl max-lg:max-w-lg">
 				<h1 className="text-2xl mb-0 w-fit  bg-background tracking-tight font-medium">
@@ -34,8 +34,14 @@ export const Projects = () => {
 								href={proj.github}
 								target="_blank"
 								rel="noopener noreferrer"
+								aria-label="link to git repository"
 							>
-								<Button variant="outline" size="icon">
+								<Button
+									name="github link"
+									variant="outline"
+									aria-label="github"
+									size="icon"
+								>
 									<FaGithub className="text-xl" />
 								</Button>
 							</a>
@@ -45,7 +51,7 @@ export const Projects = () => {
 								<AspectRatio ratio={16 / 9}>
 									<Image
 										src={proj.images[0]}
-										alt="Image"
+										alt={proj.title}
 										className="rounded-md object-cover"
 										width={800}
 										height={600}

@@ -27,8 +27,14 @@ export const Socials = () => {
 							href={sc.href}
 							target="_blank"
 							rel="noopener noreferrer"
+							aria-label={sc.name}
 						>
-							<Button variant="outline" size="icon">
+							<Button
+								variant="outline"
+								name={sc.name}
+								size="icon"
+								aria-label={sc.name}
+							>
 								{sc.icon}
 							</Button>
 						</a>
