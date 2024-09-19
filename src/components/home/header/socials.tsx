@@ -40,7 +40,7 @@ export const Socials = () => {
 						</a>
 					))}
 				</span>
-				<Link href="/resume.pdf" target="_blank">
+				<Link prefetch={false} href="/resume.pdf" target="_blank">
 					<Button className="text-base ml-10 rounded-sm lg:ml-0">
 						<FileDown className="mr-2 h-4 w-4" /> Resume
 					</Button>
