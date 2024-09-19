@@ -13,8 +13,8 @@ export const metadata: Metadata = {
 	openGraph: {
 		title: "Dhruv Kulkarni - Frontend Developer",
 		description: "Crafting beautiful web experiences.",
-		url: "https://nextjs.org",
-		siteName: "Next.js",
+		url: "https://dhruvk.xyz/",
+		siteName: "dhruvk.xyz",
 		locale: "en_IN",
 		type: "website",
 		images: [
