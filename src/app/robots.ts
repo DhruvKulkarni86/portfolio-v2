@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
 		rules: {
 			userAgent: "*",
 			allow: "/",
-			disallow: "/private/",
+			disallow: ["/resume.pdf", "*.pdf"],
 		},
 		sitemap: "https://dhruvk.xyz/sitemap.xml",
 	};

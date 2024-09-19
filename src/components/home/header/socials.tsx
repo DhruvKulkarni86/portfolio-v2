@@ -40,8 +40,16 @@ export const Socials = () => {
 						</a>
 					))}
 				</span>
-				<Link prefetch={false} href="/resume.pdf" target="_blank">
-					<Button className="text-base ml-10 rounded-sm lg:ml-0">
+				<Link
+					prefetch={false}
+					rel="nofollow"
+					href="/resume.pdf"
+					target="_blank"
+				>
+					<Button
+						aria-label="view resume"
+						className="text-base ml-10 rounded-sm lg:ml-0"
+					>
 						<FileDown className="mr-2 h-4 w-4" /> Resume
 					</Button>
 				</Link>
