@@ -30,7 +30,7 @@ export const About = () => {
 							{AboutData.tooling.languages.map((ic) => (
 								<Badge
 									variant="secondary"
-									className="text-primary "
+									className="text-primary dark:bg-secondary bg-texture"
 									key={ic.name}
 								>
 									{ic.name}
@@ -47,7 +47,7 @@ export const About = () => {
 							{AboutData.tooling.frontend.map((ic) => (
 								<Badge
 									variant="secondary"
-									className="text-primary "
+									className="text-primary dark:bg-secondary bg-texture"
 									key={ic.name}
 								>
 									{ic.name}
@@ -64,7 +64,7 @@ export const About = () => {
 							{AboutData.tooling.backend.map((ic) => (
 								<Badge
 									variant="secondary"
-									className="text-primary "
+									className="text-primary dark:bg-secondary bg-texture"
 									key={ic.name}
 								>
 									{ic.name}
@@ -80,7 +80,7 @@ export const About = () => {
 						<div className="flex flex-row gap-2 lg:gap-5 mt-2 flex-wrap">
 							{AboutData.tooling.rpa.map((ic) => (
 								<Badge
-									className="text-primary "
+									className="text-primary dark:bg-secondary bg-texture"
 									variant="secondary"
 									key={ic.name}
 								>

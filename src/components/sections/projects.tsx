@@ -66,7 +66,7 @@ export const Projects = () => {
 							{proj.tech.map((tc) => (
 								<Badge
 									variant="secondary"
-									className="text-primary text-badge"
+									className="text-primary text-badge dark:bg-secondary bg-texture"
 									key={tc}
 								>
 									{tc}

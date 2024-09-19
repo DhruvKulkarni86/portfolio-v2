@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 		siteName: "Next.js",
 		locale: "en_IN",
 		type: "website",
+		images: [
+			{
+				url: "https://dhruvk.xyz/og.png",
+				width: 512,
+				height: 512,
+			},
+		],
 	},
 };
 

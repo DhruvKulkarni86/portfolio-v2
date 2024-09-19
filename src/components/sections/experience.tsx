@@ -43,7 +43,7 @@ export const Experience = () => {
 							{exp.tech.map((tc) => (
 								<Badge
 									variant="secondary"
-									className="text-primary text-badge"
+									className="text-primary text-badge dark:bg-secondary bg-texture"
 									key={tc}
 								>
 									{tc}

@@ -17,7 +17,7 @@ export const MobileNav = () => {
 	return (
 		<Drawer>
 			<DrawerTrigger className="lg:hidden" asChild>
-				<Button size="icon">
+				<Button aria-label="site-settings" size="icon">
 					<Settings2 className="h-4 w-4" />
 				</Button>
 			</DrawerTrigger>
