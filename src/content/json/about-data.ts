@@ -1,7 +1,7 @@
 import { about } from "@/types";
 
 export const AboutData: about = {
-	about: "I create dynamic and performant Web Applications using the MERN stack and NextJS. Passionate about UIs, I'm on a journey to constantly refine and optimize the visual and interactive aspects of my projects. I love to experiment and integrate the latest web dev trends in my projects. Curerently exploring the domain of cloud computing.",
+	about: "I create dynamic web applications and craft interfaces using React and NextJS. Passionate about UIs, I'm on a journey to create polished software and web experiences.",
 	tooling: {
 		languages: [
 			{

@@ -1,6 +1,6 @@
 export const Footer = () => {
 	return (
-		<div className="flex flex-col scroll-mt-16 l:scroll-mt-24 lg:pt-10 pt-2 text-sm text-muted-foreground  ">
+		<div className="flex italic flex-col scroll-mt-16 l:scroll-mt-24 lg:pt-10 pt-2 text-md text-muted-foreground  ">
 			<p className="bg-background w-fit">
 				Developed by Dhruv Kulkarni 🇮🇳
 			</p>

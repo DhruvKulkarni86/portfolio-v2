@@ -19,9 +19,9 @@ export const Header = () => {
 					<h2 className="text-xl bg-background  font-semibold tracking-tight">
 						Frontend Developer | RPA Developer
 					</h2>
-					<p className="font-medium bg-background  w-[80%] text-muted-foreground">
-						I love all things web and crafting beautiful web
-						experiences.
+					<p className="font-medium bg-background w-fit lg:w-[70%] text-muted-foreground">
+						I love crafting beautiful web experiences and automating
+						workflows.
 					</p>
 					<div className="hidden mt-5 lg:flex">
 						<ModeToggle />

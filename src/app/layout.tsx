@@ -10,6 +10,14 @@ export const metadata: Metadata = {
 	description: "Dhruv Kulkarni is a frontend developer based in India",
 	authors: [{ name: "Dhruv", url: "https://dhruvk.xyz" }],
 	creator: "Dhruv Kulkarni",
+	openGraph: {
+		title: "Dhruv Kulkarni - Frontend Developer",
+		description: "Crafting beautiful web experiences.",
+		url: "https://nextjs.org",
+		siteName: "Next.js",
+		locale: "en_IN",
+		type: "website",
+	},
 };
 
 export default function RootLayout({
@@ -22,7 +30,7 @@ export default function RootLayout({
 			<body className={inter.className}>
 				<ThemeProvider
 					attribute="class"
-					defaultTheme="light"
+					defaultTheme="system"
 					enableSystem
 					disableTransitionOnChange
 				>
