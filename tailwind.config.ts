@@ -21,8 +21,8 @@ const config: Config = {
 			"5xl": "4.210rem",
 		},
 		fontFamily: {
-			heading: "Inter",
-			body: "Inter",
+			heading: "Schibsted_Grotesk",
+			body: "Schibsted_Grotesk",
 		},
 		fontWeight: {
 			normal: "400",
@@ -33,7 +33,7 @@ const config: Config = {
 		extend: {
 			backgroundImage: {
 				"light-radial": "radial-gradient(#aba9a9 1px, transparent 1px)",
-				"dark-radial": "radial-gradient(#ffffff33 1px, #00091d 1px)",
+				"dark-radial": "radial-gradient(#ffffff33 1px, #000a1f 1px)",
 			},
 			backgroundSize: {
 				"custom-size": "20px 20px",
